@@ -243,6 +243,32 @@ section p {
     transform: translateY(-10px);
 }
 
+/* Fixing the image inside portfolio item */
+.portfolio-item img {
+    width: 100%; /* Ensures the image takes up the full width of the item */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area of the container */
+    border-radius: 8px; /* Matches the rounded corners of the portfolio item */
+}
+/* View Project button styling */
+.view-project {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #1e6fc5;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-project:hover {
+    background-color: #1e6fc5;
+    color: #fff;
+    transform: translateY(-5px);
+}
 /* Testimonials Section */
 .testimonial-cards {
     display: flex;
