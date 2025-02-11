@@ -3,65 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Landing Page</title>
+    <meta name="description" content="A modern animated landing page with smooth transitions and interactions">
+    <title>TechWave</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Navigation -->
     <header>
-        <h1>TechWave</h1>
         <nav>
-            <ul>
+            <h1 class="logo">TechWave</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2>Welcome to <span class="typing"></span></h2>
-        <p>Bringing innovation to your doorstep</p>
-        <a href="#features" class="btn">Explore More</a>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to <span class="typing-effect"></span></h2>
+            <p>Experience smooth animations and seamless interactions</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </section>
-
-    <!-- About Section -->
+    
     <section id="about" class="fade-in">
         <h2>About Us</h2>
-        <p>TechWave is a modern solution to all your digital needs.</p>
+        <p>We create engaging, interactive, and visually appealing websites.</p>
     </section>
-
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Our Features</h2>
-        <div class="feature fade-in">
-            <h3>Fast & Secure</h3>
-            <p>We ensure the best security and speed for our clients.</p>
-        </div>
-        <div class="feature fade-in">
-            <h3>Innovative Solutions</h3>
-            <p>Our AI-powered solutions help your business grow.</p>
-        </div>
-        <div class="feature fade-in">
-            <h3>24/7 Support</h3>
-            <p>We are available around the clock to assist you.</p>
+    
+    <section id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">Web Development</div>
+            <div class="card">UI/UX Design</div>
+            <div class="card">SEO Optimization</div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
+    
+    <section id="contact" class="fade-in">
         <h2>Contact Us</h2>
-        <p>Get in touch for a free consultation!</p>
-        <a href="mailto:info@techwave.com" class="btn">Email Us</a>
+        <p>Get in touch with us for your next project.</p>
     </section>
-
-    <!-- Footer -->
+    
     <footer>
         <p>&copy; 2025 TechWave. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
