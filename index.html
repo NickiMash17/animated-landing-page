@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern animated landing page with smooth transitions and interactions">
     <title>TechWave</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -15,41 +17,139 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home" class="hero">
+    <section class="hero">
+        <!-- Particles Effect Container -->
+        <div id="particles-js" class="particles"></div>
+    
+        <!-- Hero Section Content -->
         <div class="hero-content">
             <h2>Welcome to <span class="typing-effect"></span></h2>
             <p>Experience smooth animations and seamless interactions</p>
             <a href="#about" class="btn">Learn More</a>
         </div>
+    
+        <!-- Parallax Background -->
+        <div class="hero-parallax"></div>
     </section>
+    
     
     <section id="about" class="fade-in">
         <h2>About Us</h2>
-        <p>We create engaging, interactive, and visually appealing websites.</p>
+        <p>At TechWave, we specialize in creating cutting-edge websites that are as visually stunning as they are functional. Our team of designers and developers work tirelessly to push the boundaries of creativity while ensuring that each website is optimized for performance and usability.</p>
+        <p>We believe in the power of design and technology to transform businesses and deliver exceptional user experiences. Whether you need a sleek portfolio, an engaging landing page, or a full-fledged e-commerce site, we’ve got you covered.</p>
+    </section>
+
+    <section id="features" class="fade-in">
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Innovative Design</h3>
+                <p>Our designs are not only beautiful but also functional, focusing on user experience and interaction. We tailor every design to suit your brand’s unique identity and goals.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fast Performance</h3>
+                <p>We optimize every website for speed, ensuring fast loading times and smooth transitions for users, even during high traffic periods.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Responsive Layout</h3>
+                <p>Whether it’s a mobile, tablet, or desktop, our websites look amazing on any device. We prioritize responsive design to ensure a seamless user experience across all platforms.</p>
+            </div>
+        </div>
     </section>
     
     <section id="services" class="fade-in">
         <h2>Our Services</h2>
         <div class="service-cards">
-            <div class="card">Web Development</div>
-            <div class="card">UI/UX Design</div>
-            <div class="card">SEO Optimization</div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>From simple landing pages to complex web applications, our team has the expertise to create high-quality websites using the latest technologies.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>We craft intuitive and visually appealing user interfaces that enhance the user experience, ensuring every interaction is smooth and enjoyable.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>We help improve your website’s visibility in search engines with proven SEO strategies, making sure your audience finds you effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+        <h2>Our Portfolio</h2>
+        <p>Take a look at some of our recent projects. We’re proud of the websites we’ve created and the positive impact they’ve had on our clients.</p>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="portfolio1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A sleek, responsive portfolio website for a creative agency.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>An e-commerce platform for a fashion brand, designed for mobile and desktop users.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>A custom-built blog for a tech enthusiast, featuring dynamic content and media galleries.</p>
+            </div>
         </div>
     </section>
     
-    <section id="contact" class="fade-in">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for your next project.</p>
+    <section id="testimonials" class="fade-in">
+        <h2>Client Testimonials</h2>
+        <p>We believe that happy clients are the best testament to our work. Here’s what some of our clients have to say about us:</p>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img src="path/to/john-doe.jpg" alt="John Doe" class="testimonial-img" />
+                <p>"TechWave took our vision and turned it into a beautifully designed website. The experience was seamless, and they truly listened to our needs. Highly recommend!"</p>
+                <h4>John Doe</h4>
+                <p>CEO, Creative Solutions</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="path/to/jane-smith.jpg" alt="Jane Smith" class="testimonial-img" />
+                <p>"The website they created for us not only looks great but also performs amazingly. We’ve seen increased traffic and customer engagement!"</p>
+                <h4>Jane Smith</h4>
+                <p>Marketing Director, FashionCo</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="path/to/michael-brown.jpg" alt="Michael Brown" class="testimonial-img" />
+                <p>"TechWave's team was professional, creative, and dedicated. They delivered exactly what we wanted and more. Will definitely work with them again!"</p>
+                <h4>Michael Brown</h4>
+                <p>Owner, TechStart</p>
+            </div>
+        </div>
     </section>
     
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Have a project in mind or need help with your website? Get in touch with us today, and let’s bring your vision to life!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2025 TechWave. All rights reserved.</p>
+        <p>&copy; 2025 TechWave. All rights reserved. | Designed with ❤️ by TechWave Team</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
