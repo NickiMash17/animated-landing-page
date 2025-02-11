@@ -67,3 +67,16 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
