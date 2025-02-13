@@ -31,22 +31,42 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Sidebar -->
     <div class="sidebar-overlay"></div>
     <aside class="sidebar">
         <button class="close-btn" aria-label="Close sidebar">&times;</button>
+        <div class="sidebar-search">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
         <ul class="sidebar-menu">
-            <li><a href="#home" class="sidebar-link">Home</a></li>
-            <li><a href="#about" class="sidebar-link">About</a></li>
-            <li><a href="#features" class="sidebar-link">Features</a></li>
-            <li><a href="#services" class="sidebar-link">Services</a></li>
-            <li><a href="#portfolio" class="sidebar-link">Portfolio</a></li>
-            <li><a href="#testimonials" class="sidebar-link">Testimonials</a></li>
-            <li><a href="#contact" class="sidebar-link">Contact</a></li>
+            <li><a href="#home" class="sidebar-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" class="sidebar-link"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#features" class="sidebar-link"><i class="fas fa-star"></i> Features</a></li>
+            <li><a href="#services" class="sidebar-link"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="#portfolio" class="sidebar-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#testimonials" class="sidebar-link"><i class="fas fa-comments"></i> Testimonials</a></li>
+            <li><a href="#contact" class="sidebar-link"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
+        <div class="dark-mode-toggle">
+            <label for="dark-mode">
+                <input type="checkbox" id="dark-mode" />
+                <span class="slider"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+        <div class="sidebar-footer">
+            <p>&copy; 2025 TechWave</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </aside>
 
+    <!-- Rest of content (hero, about, features, etc.) goes here -->
     <section class="hero">
         <div id="particles-js" class="particles"></div>
         <div class="hero-content">
@@ -173,3 +193,6 @@
     </footer>
 </body>
 </html>
+
+
+    

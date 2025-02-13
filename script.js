@@ -79,18 +79,21 @@ const closeBtn = document.querySelector('.close-btn');
 hamburger.addEventListener('click', () => {
     sidebar.classList.add('active');
     sidebarOverlay.classList.add('active');
+    hamburger.classList.add('active');
 });
 
 // Close sidebar
 closeBtn.addEventListener('click', () => {
     sidebar.classList.remove('active');
     sidebarOverlay.classList.remove('active');
+    hamburger.classList.remove('active');
 });
 
 // Close sidebar when clicking outside
 sidebarOverlay.addEventListener('click', () => {
     sidebar.classList.remove('active');
     sidebarOverlay.classList.remove('active');
+    hamburger.classList.remove('active');
 });
 
 // Close sidebar when a link is clicked
@@ -99,5 +102,14 @@ sidebarLinks.forEach(link => {
     link.addEventListener('click', () => {
         sidebar.classList.remove('active');
         sidebarOverlay.classList.remove('active');
+        hamburger.classList.remove('active');
     });
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode');
+const body = document.body;
+
+darkModeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
 });
