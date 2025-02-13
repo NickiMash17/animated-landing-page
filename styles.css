@@ -14,42 +14,82 @@ body {
 }
 
 /* Header */
-header {
+.header {
     background-color: #007bff;
     padding: 20px;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-
-header .logo {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-nav {
+/*Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    
 }
 
-.nav-links a {
-    color: #fff;
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
     text-decoration: none;
-    font-weight: 500;
+    color: #fff;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
     color: #ffcc00;
-    text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Active State */
+.nav-menu.active {
+    display: flex;
 }
 
 /* Hero Section */
@@ -501,5 +541,23 @@ footer {
 
     .btn {
         font-size: 1rem;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .nav-menu.active {
+        display: flex;
     }
 }
