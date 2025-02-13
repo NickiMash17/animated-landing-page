@@ -587,7 +587,6 @@ footer {
         display: flex;
     }
 }
-/* Existing styles... */
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
@@ -647,9 +646,21 @@ footer {
 
     .sidenav {
         left: 0;
+        width: 200px;
     }
 
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+/* Additional Media Query for Extra Small Devices */
+@media (max-width: 480px) {
+    .sidenav {
+        width: 100px; /* Further reduced width */
+    }
+
+    .sidenav a {
+        font-size: 14px; /* Further reduced font size */
     }
 }
