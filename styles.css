@@ -232,12 +232,14 @@ body {
 .hero .btn:active {
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
 }
+/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 20px; /* Adjust this value to control the distance from the bottom */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10; /* Ensure it's above other elements */
+    z-index: 10;
+    cursor: pointer; /* Indicates it's clickable */
 }
 
 .scroll-arrow {
@@ -256,6 +258,9 @@ body {
     60% { transform: translateY(-10px) rotate(45deg); }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* Section Styling */
 section {
     padding: 60px 20px;

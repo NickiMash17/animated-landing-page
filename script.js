@@ -115,3 +115,15 @@ const body = document.body;
 darkModeToggle.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 });
+// Smooth Scroll for Scroll Indicator
+const scrollIndicator = document.querySelector('.scroll-indicator');
+
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+        // Scroll to the next section (e.g., the "About" section)
+        const nextSection = document.querySelector('#about');
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
